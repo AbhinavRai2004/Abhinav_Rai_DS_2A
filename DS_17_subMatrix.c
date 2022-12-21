@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main()
+{
+    int a[50][50],b[50][50],c[50][50];
+    int n;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+        scanf("%d",&a[i][j]);
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+       scanf("%d",&b[i][j]);
+        }
+    }
+    printf("The addiition of matrices will be\n");
+      for(int i=0;i<n;i++){
+      for(int j=0;j<n;j++){
+        c[i][j] = a[i][j]-b[i][j];
+        printf("%d",c[i][j]);
+        }
+        printf("\n");
+      }
+
+         return 0;
+}
